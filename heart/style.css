@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+#intro {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 10;
+
+  color: white;
+
+  font-family: monospace;
+}
+
+.system {
+  color: #ff2d6f;
+  font-size: 14px;
+}
+
+#intro h1 {
+  margin: 8px 0 30px;
+
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.message {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#decrypt {
+  padding: 14px 25px;
+
+  background: #d91655;
+  color: white;
+
+  border: 1px solid #ff4d80;
+
+  font-family: monospace;
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.hint {
+  margin-top: 15px;
+
+  font-size: 10px;
+  opacity: 0.6;
+}
+.cursor {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
